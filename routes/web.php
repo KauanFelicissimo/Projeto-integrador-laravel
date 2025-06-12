@@ -1,45 +1,40 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function (){
-   return 'Está é a página home';
- 
+Route::get('/index', function () {
+    return view('index');
 });
 
-Route::get('/cursos', function (){
-   return 'Está é a página de cursos';
- 
+Route::get('/courses', function () {
+    return view('courses');
 });
 
-Route::get('/destalhes', function (){
-   return 'Está é a página da descrição dos cursos';
- 
+Route::get('/desc', function () {
+    return view('desc');
 });
 
-Route::get('/log-in', function (){
-   return 'Está é a página de login dos site';
- 
+Route::get('/reset', function () {
+    return view('reset');
 });
 
-Route::get('/cadastro', function (){
-   return 'Está é a página de cadastro';
- 
+Route::get('/signup', function () {
+    return view('signup');
 });
 
-Route::get('/recuperação', function (){
-   return 'Está é a página para recuperar a sua senha';
- 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/meus-cursos', function (){
-   return 'Está é a página home';
- 
-});
-
-
-
+require __DIR__.'/auth.php';
