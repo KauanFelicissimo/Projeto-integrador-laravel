@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
- 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* header */
 body{
     background-color: #202020;
@@ -9,6 +9,368 @@ body{
     margin: 0;
      padding: 0;
 }
+
+
+/* Aurora Platform */
+ 
+ 
+:root {
+    --aurora-background-color: #202020;
+    --aurora-text-color: #FAFAFA;
+    --aurora-background-medium:#282828;
+    --aurora-text-dark: #282828;
+ 
+    --aurora-font-family: 'Montserrat', Sans-Serif;
+    --aurora-font-size: 1rem;
+    --aurora-font-size-medium: 0.75rem;
+ 
+    --aurora-border-radius: 25px;
+ 
+    --aurora-header-height: 5rem;
+    --aurora-footer-height: 3rem;
+    --aurora-logo-height: 4rem;
+ 
+    --aurora-margin-zero: 0;
+ 
+ 
+}
+ 
+ 
+.font-semibold {
+    font-weight: 600;
+}
+ 
+ 
+ 
+/* Website Styles */
+ 
+ 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--aurora-background-medium);
+    font-family: var(--aurora-font-family);
+    color: var(--aurora-text-color);
+    margin: var(--aurora-margin-zero);
+    font-size: var(--aurora-font-size);
+}
+ 
+ 
+ 
+/* Header Section */
+ 
+ 
+.aurora-header {
+    background-color: var(--aurora-background-color);
+    width: 100%;
+    height: var(--aurora-header-height);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.125);
+}
+ 
+ 
+.aurora-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.5rem 0 1.5rem;
+}
+ 
+ 
+.navbar-logo img {
+    width: auto;
+    height: var(--aurora-logo-height);
+}
+ 
+ 
+/* .aurora-menu {
+    display: flex;
+}
+ 
+ 
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+ 
+ 
+.navbar-item {
+    margin-left: 1.5rem;
+} */
+ 
+ 
+ 
+/* Main Section */
+ 
+ 
+.aurora-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+ 
+ 
+ 
+ 
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 500px;  
+    background-color: #404040;
+    border-radius: var(--aurora-border-radius);
+}
+ 
+ 
+.register-form form .login-button {
+    align-self: flex-start;
+}
+ 
+ 
+.title-form {
+    color: rgba(250, 250, 250, 0.8);
+    margin-top: 1rem;
+}
+ 
+ 
+.title-form h1 {
+    font-size: 1.2em;
+}
+ 
+ 
+.container-form {
+    position: relative;
+    color: #e6e6e6;
+    width: 100%;
+}
+ 
+ 
+ 
+.container-form input {
+    background: transparent;
+    color: var(--aurora-text-color);
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.8);
+    margin: auto;
+    width: 75%;
+    height: 50px;
+    padding: 1rem;
+    font-size: var(--aurora-font-size-medium);
+    box-sizing: border-box;
+ 
+}
+ 
+ 
+.container-form input:hover + label,
+.container-form input:focus + label,
+.container-form input:valid + label {
+    color: var(--aurora-text-color);
+    transform: translateY(-15px);
+    transition: 0.5s cubic-bezier(.32,1,.64,1);
+    font-size: var(--aurora-font-size-medium);
+}
+ 
+ 
+.container-form label {
+    position: absolute;
+    display: inline-block; /* Required for the transform property to work properly */
+    top: 8px;
+    left: calc((100% - 75%) / 2 + 1rem);
+    font-size: 0.875rem;
+    transition: 0.5s cubic-bezier(.32,1,.64,1);
+    pointer-events: none; /* Allows you to click on the input even with the label on top */
+   
+}
+ 
+ 
+.checkbox-form {
+    display: flex;
+    color: #FAFAFA;
+    width: 210px;
+    font-size: var(--aurora-font-size-medium);
+    margin: 1rem;
+    align-items: center;
+}
+ 
+ 
+.checkbox-form input {
+    margin: var(--aurora-margin-zero);
+    accent-color: #8C96C8;
+    width: 18px;
+    height: 18px;
+}
+ 
+ 
+.checkbox-form label {
+   margin-left: 0.5rem;
+}
+ 
+ 
+.checkbox-form a:hover {
+   color: #8C96C8;
+   transition: color 0.25s ease;
+}
+ 
+ 
+.submit-form {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+}
+ 
+ 
+.submit-form button {
+    display: inline-block;
+    border-radius: var(--aurora-border-radius);
+    background: rgba(140, 150, 200, 1);
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: var(--aurora-font-size-medium);
+    color: var(--aurora-text-color);
+    transition: width 0.5s cubic-bezier(.32,1,.64,1),
+                height 0.5s cubic-bezier(.32,1,.64,1),
+                color 0.5s cubic-bezier(.32,1,.64,1),
+                background-color 0.5s cubic-bezier(.32,1,.64,1);
+}
+ 
+ 
+.submit-form button:hover {
+    background-color: var(--aurora-text-color);
+    color: var(--aurora-text-dark);
+    width: 50%;
+ 
+}
+ 
+ 
+.login-button button {
+    background: transparent;
+    border: none;
+    color: #e6e6e6;
+    border-radius: 25px;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    margin: 1rem;
+}
+ 
+ 
+.login-button button:hover {
+    background-color: rgba(32, 32, 32, 0.75);
+    transition: 1s ease;
+ 
+}
+ 
+ 
+/* Footer Section */
+ 
+ 
+ 
+.aurora-footer {
+    background-color: var(--aurora-background-color);
+    color: var(--aurora-text-color);
+    width: 100%;
+    height: var(--aurora-footer-height);
+    border-top: 1px solid rgba(250, 250, 250, 0.125);
+}
+ 
+ 
+.footer-container {
+    display: flex;
+    margin: 1rem;
+}
+ 
+ 
+.copyright-section {
+    font-size: var(--aurora-font-size-medium);
+}
+ 
+/* Footer */
+ 
+:root{
+    --aurora-text-white: 250, 250, 250, 0.8;
+    --aurora-text-link: 250, 250, 250, 0.6;
+}
+ 
+body{
+ 
+    background-color: #202020e1;
+     color: rgba( var(--aurora-text-white ));
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     justify-content: space-between;
+ 
+}
+ 
+.header-link {  
+    text-decoration: none;
+    color: rgba( var(--aurora-text-white )) !important;
+}
+ 
+.header-link:hover {  
+    color: rgba( var(--aurora-text-link )) !important;
+}
+ 
+.navbar-nav {
+    gap: 1rem;
+}
+ 
+ 
+ 
+.site-footer {
+    background-color: #202020;
+    padding: 30px 20px 15px;
+    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.footer-bottom {
+    /* text-align: center; */
+    margin-top: 10px;
+    font-size: 10px;
+    color: rgba( var(--aurora-text-white ));
+ 
+}
+.titulo-footer{
+     color: rgba( var(--aurora-text-white ));
+}
+ 
+.texto-footer {
+    color: rgba( var(--aurora-text-white ));
+    width: 75%;
+    font-size: 0.75rem;
+   
+}
+
+
+ 
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+     color: rgba( var(--aurora-text-white ));
+    text-decoration: none;
+}
+ 
+ 
+.footer-links a:hover {
+     color: rgba( var(--aurora-text-link ));
+}
+ 
  
 .header-link {  
     text-decoration: none;
@@ -133,6 +495,8 @@ body{
         background-color: #252525;
         width: 40%;
         max-height: 50px;
+        text-align: center;
+        justify-content: center;
     }
  
     .titulo-cursos {
@@ -299,15 +663,14 @@ body{
  
 /* Recu senha */
  
-p  {
+.titulo-cursos p  {
   font-family: 'Montserrat', sans-serif;
   color: #E6E6E6;
   display: flex;
   height: 100px;
   font-size: 20px;
   justify-content: center;
-  align-items: top;
- 
+  text-align: center;
 }
  
  
@@ -547,6 +910,46 @@ input::placeholder {
   top: -70px;
 }
 
+/* video aula */
+.botao{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #2E3146;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+   
+}
+ 
+.videoaula{
+    width: 900px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #757575;
+    border-radius: 20px;
+   
+}
+ 
+.container {
+    display: flex;
+    gap: 90px;
+    margin-top: 20px;
+    justify-content: center;
+}
+ 
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* Mobile */
  
  
@@ -706,10 +1109,13 @@ body.offcanvas-active {
     }
  
     .caixa-texto {
+        display: flex;
         margin: auto;
         background-color: #252525;
         width: 62%;
         max-height: 20px;
+        text-align: center;
+        justify-content: center;
     }
  
     .titulo-cursos {
@@ -741,6 +1147,25 @@ body.offcanvas-active {
 
 
     
-    
+      .container {
+        flex-direction: column;
+    }
+ 
+    .botao {
+        width: 60%;
+    }
+ 
+      .video{
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-right: 250%;
+        margin-left: 25px;
+    }
+
+    .pa {
+        font-size: 0.5em;
+    }
  
  }

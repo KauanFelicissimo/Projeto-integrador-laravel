@@ -30,8 +30,8 @@
         <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-info-circle"></i> About </a>
         <a class="header-link" href="{{ asset('../courses') }}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-play-circle"></i> Courses </a>
         <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-currency-dollar"></i> Donate </a>
-        <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-person-add"></i> Sign Up </a>
-        <a class="header-link" href="{{ asset('../reset') }}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-box-arrow-in-right"></i> Sign In </a>
+        <a class="header-link" href="{{ asset('../register') }}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-person-add"></i> Sign Up </a>
+        <a class="header-link" href="{{ asset('../login') }}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-box-arrow-in-right"></i> Sign In </a>
       </div>
       <form class="d-none d-lg-flex ms-auto search-form" role="search">
         <input class="form-control me-2 opacity-75" type="search" placeholder="Search" aria-label="Search" style=" border-color: rgba(255, 255, 255, 0.2); background-color: transparent; color: rgba(255, 255, 255, 0.8);">

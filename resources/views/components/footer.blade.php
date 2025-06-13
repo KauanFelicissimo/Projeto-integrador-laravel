@@ -13,8 +13,8 @@
             <a href="#"></i>About</a>
             <a href="{{ asset('../courses') }}"></i>Courses</a>
             <a href="#"></i>Donate</a>
-            <a href="{{ asset('../reset') }}"></i>Sign in</a>
-            <a href="#"></i>Sign up</a>            
+            <a href="{{ asset('../login') }}"></i>Sign in</a>
+            <a href="{{ asset('../register') }}"></i>Sign up</a>            
         </div>
  
         <div class="footer-links" id="footer-contact">

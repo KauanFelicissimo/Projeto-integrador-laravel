@@ -19,12 +19,8 @@ Route::get('/desc', function () {
     return view('desc');
 });
 
-Route::get('/reset', function () {
-    return view('reset');
-});
-
-Route::get('/signup', function () {
-    return view('signup');
+Route::get('/video', function () {
+    return view('video-aula');
 });
 
 Route::get('/dashboard', function () {
