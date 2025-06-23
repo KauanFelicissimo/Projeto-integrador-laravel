@@ -9,21 +9,21 @@
 </head>
 <body>
  
-  
+ 
     <header class="aurora-header">
  
-        <nav class="aurora-navbar">
+            <nav class="aurora-navbar">
  
-            <div class="navbar-logo">
+                <div class="navbar-logo">
  
-                <a href="{{asset('index')}}">
-                    <img src="{{asset('images/Aurora-Logo-White.png') }}" alt="The brand logo">
-                </a>
+                    <a href="{{asset('index')}}">
+                        <img src="{{asset('img/auroralogo.png') }}" alt="The brand logo">
+                    </a>
  
-            </div>
+                </div>
  
- 
-            <!-- <div class="aurora-menu">
+               
+                <!-- <div class="aurora-menu">
  
                     <ul class="navbar-menu">
                         <li class="navbar-item">
@@ -39,41 +39,40 @@
                         </li>
                     </ul> -->
  
-            </div>
+                </div>
  
-        </nav>
+            </nav>
  
     </header>
  
  
- 
- 
-<div class="new-box">
- 
- 
- 
+
+<div class="new-box"> 
+
+
+
  <div class="new-password-1"><p>New Password</p></div>
 <br><br>
    <!-- Password -->
   <div class="email">
   <input type="password" placeholder="New Password">
   </div>
- 
+
   <div class="email">
   <input type="password" placeholder="Confirm Password">
   </div>
- 
- 
+
+
   <!-- possivel alteração em caso de real mudança de senha -->
- 
- 
+
+
   <div class="enviar">
   <input type="submit" value="Change" id="new-password" required>
   </div>
- 
+
 </div>
- 
- 
+
+
  <footer class="aurora-footer">
  
         <div class="footer-container">
@@ -91,4 +90,3 @@
  
 </body>
 </html>
- 
