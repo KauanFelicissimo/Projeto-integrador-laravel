@@ -11,29 +11,35 @@ Route::post('/cadastro', [CadastroController::class, 'adicionar'])->name('cadast
 
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index', ['page' => 'index' ]);
+})->name('index');
 
 
 Route::get('/cadastro', function (){
-    return view('cadastro');
-});
+    return view('cadastro', ['page' => 'cadastro' ]);
+})->name('register');
 
-Route::get('/index', function () {
-    return view('index');
-});
+
 
 Route::get('/courses', function () {
-    return view('courses');
-});
+    return view('courses', ['page' => 'courses' ]);
+})->name('courses');
+
+Route::get('/login', function () {
+    return view('login', ['page' => 'login' ]);
+})->name('login');
 
 Route::get('/desc', function () {
-    return view('desc');
+    return view('desc', ['page' => 'desc' ]);
 });
 
+Route::get('/about', function () {
+    return view('about', ['page' => 'about' ]);
+})->name('about');
+
 Route::get('/video', function () {
-    return view('video-aula');
-});
+    return view('video-aula', ['page' => 'video-aula' ]);
+})->name('video');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -46,6 +52,16 @@ Route::get('/reset', function () {
 Route::get('/reset', function () {
     return view('reset');
 });
+
+Route::get('/verify', function () {
+    return view('verifycertificate', ['page' => 'verifycertificate' ]);
+})->name('verify');
+
+Route::get('/mycourses', function () {
+    return view('mycourses', ['page' => 'mycourses' ]);
+})->name('mycourses');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

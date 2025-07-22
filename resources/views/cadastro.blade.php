@@ -17,7 +17,7 @@
                 <div class="navbar-logo">
  
                     <a href="{{asset('/index')}}">
-                        <img src="{{asset('images/Aurora-Logo-White.png') }}" alt="The brand logo">
+                        <img src="{{asset('img/brand-logo.png') }}" alt="The brand logo">
                     </a>
  
                 </div>

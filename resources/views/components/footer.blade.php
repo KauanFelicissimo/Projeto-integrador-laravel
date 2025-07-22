@@ -1,36 +1,76 @@
-<footer class="site-footer">
-<div class="footer-top">
-    <div class="footer-container">
-        <div class="footer-links">
-            <h3 class='titulo-footer'>About Us</h3>
-            <h3 class="texto-footer">A student-developed learning platform in technology</h3>
-            <a href="{{ asset('../index') }}"><i ></i><img class="logo footer"src="{{ asset('img/auroralogo.png') }}" height="75" width="70"></a>
+
+
+    <footer class="aurora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <div class="footer-center">
+
+                    <nav>
+
+                        <ul class="footer-menu">
+
+                            <li class="footer-item">
+                                <a href="{{ route('about') }}"> About </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="{{ route('index') }}"> Home </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="{{ route('courses') }}"> Courses </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="{{ route('login') }}"> Login </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="{{ route('register') }}"> Register </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <div class="footer-icons">
+                        <a href="https://github.com/ApenasAlguem007/aurora-platform" target="_blank">
+                            <span class="bi bi-github">  </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom border-top">
+
+                <div class="copyright-section">
+                    <p> Copyright &copy; <?php echo date('Y'); ?> Aurora Platform. All Rights Reserved. </p>
+                </div>
+
+                <div class="verify-certificate">
+                    <a href="{{ route('verify') }}"> Verify Certificate </a>
+                </div>
+
+            </div>
+
         </div>
- 
-        <div class="footer-links">
-            <h3 class='titulo-footer'>Aurora</h3>
-            <a href="{{ asset('../index') }}"></i>Home</a>
-            <a href="#"></i>About</a>
-            <a href="{{ asset('../courses') }}"></i>Courses</a>
-            <a href="#"></i>Donate</a>
-            <a href="{{ asset('../login') }}"></i>Sign in</a>
-            <a href="{{ asset('../register') }}"></i>Sign up</a>            
-        </div>
- 
-        <div class="footer-links" id="footer-contact">
-            <h3 class='titulo-footer'>Contact Us</h3>
-            <a href="#"> GitHub</a>
-        </div>
-    </div>
-</div>
- 
-    <div class="footer-bottom">
-        <h3 class="copyright">Copyright &copy; Aurora 2025 </h3>
-         <div class="footer-links" id="footer-certificate">
-        <a href="#"></i>Verify Certificate</a>
-         </div>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </footer>
+
+
+    <script src="{{ asset('js/bootstrap.js') }}"> </script>
+    <script src="{{ asset('js/script.js') }}"> </script>
+
+
 </body>
 </html>

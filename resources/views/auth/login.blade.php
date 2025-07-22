@@ -18,8 +18,8 @@
  
             <div class="navbar-logo">
  
-                <a href="{{asset('index')}}">
-                    <img src="{{asset('images/Aurora-Logo-White.png') }}" alt="The brand logo">
+                <a href="{{ asset('/') }}">
+                    <img src="{{asset('img/brand-logo.png') }}" alt="The brand logo">
                 </a>
  
             </div>
@@ -63,7 +63,7 @@
  
  
                 <div class="container-form">
-                    <input type="email" name="email" :value="__('Email')" id="email" required>
+                    <input type="text" name="email" :value="__('Email')" id="email" required>
                     <label for="email"> E-mail </label>
                 </div>
  
@@ -84,12 +84,12 @@
  
  
                 <div class="submit-form">
-                    <button type="submit" name="submit-button"> {{ __('Login') }}</button>
+                    <button type="submit" name="submit-button"> Login</button>
                 </div>
  
  
                 <div class="login-button">
-                    <button type="button" name="login-button"> Sign Up </button>
+                 <a href="{{ asset('../cadastro') }}"   <button type="button" name="login-button"> Sign Up </button>
                 </div>
  
  
@@ -119,3 +119,5 @@
 </body>
  
 </html>
+ 
+ 

@@ -1,53 +1,80 @@
  @include("components.header")
  
  
-<div class="fundo-desc">
-    <div class="descricao">
-        <div class="img-container">
-            <img class="img-desc" src="{{ asset('img/conceito-de-engenharia-de-computador-plana.png') }}" alt="bbbbbb">
+   <div class="tudo">
+    <div class="fundo-desc">
+        <div class="container">
+            <div class="img-container">
+                <img src="./img//imagem.png" alt="bbbbbb">
+            </div>
+
         </div>
-    </div>
- 
-    <div class="pa">
-        <p>Um curso de hardware geralmente aborda os componentes físicos de computadores e dispositivos eletrônicos, ensinando como funcionam, como são montados e como podem ser reparados ou otimizados. Aqui estão alguns tópicos comuns em um curso desse tipo:
- 
-<li> Introdução ao Hardware: Conhecimento básico sobre componentes como processadores, memória RAM, placas-mãe e armazenamento.</li>
-<li> Arquitetura de Computadores: Estrutura e funcionamento dos sistemas computacionais.</li>
-<li>Montagem e Manutenção: Como montar um computador do zero e realizar reparos.</li>
-<li> Periféricos e Conectividade: Dispositivos como teclados, mouses, impressoras e redes.</li>
-<li>Diagnóstico de Problemas: Identificação e solução de falhas no hardware.</li>
-<li>Upgrade e Customização: Como melhorar o desempenho de um sistema.</p></li>
-    </div>
-   
-    <div class="botao1">
-    <button class="botao">Ver Mais</button>
-    </div>
-</div>
- 
-<br>
-<!-- serapaçao -->
- 
-<div class="fundo-desc">
-    <div class="descricao">
-        <div class="img-container">
-            <img class="img-desc" src="{{ asset('img/Wallpaper – Back-End II.png') }}" alt="bbbbbb">
+
+
+        <div>
+            <div class="descricao">
+                <div class="pa">
+                    <p>A hardware course typically covers the physical components of computers and electronic devices, teaching how they work, how they are assembled, and how they can be repaired or optimized. Here are some common topics in such a course:
+                    
+                        <li> Introduction to Hardware: Basic knowledge of components such as processors, RAM, motherboards, and storage.</li>
+                        <li> Computer Architecture: Structure and functioning of computer systems.</li>
+                        <li> Assembly and Maintenance: How to build a computer from scratch and perform repairs.</li>
+                        <li> Peripherals and Connectivity: Devices such as keyboards, mice, printers, and networks.</li>
+                        <li> Problem Diagnosis: Identifying and solving hardware failures.</li>
+                        <li> Upgrades and Customization: How to improve a system’s performance.</p>
+                        </li>
+                    
+                </div>
+
+            </div>
+
+            <div class="botao1">
+                <button class="botao">Details</button>
+            </div>
+
         </div>
-    </div>
- 
-    <div class="pa">
-        <p>Um curso de redes geralmente ensina como os dispositivos se conectam e comunicam entre si, cobrindo desde conceitos básicos até configurações avançadas. Aqui estão alguns tópicos típicos:
- 
-<li> Fundamentos de Redes: Modelos de comunicação, como TCP/IP e OSI.</li>
-<li> Tipos de Redes: LAN, WAN, MAN e redes sem fio.</li>
-<li> Protocolos de Comunicação: HTTP, FTP, DHCP, DNS e outros essenciais para conectividade.</li>
-<li> Configuração de Equipamentos: Roteadores, switches e servidores.</li>
-<li> Segurança de Redes: Proteção contra ataques, firewalls e criptografia.</li>
-<li>Cloud Computing e Virtualização: Conceitos modernos de infraestrutura digital.</li>  </p>
-    </div>
-   
-    <div class="botao1">
-    <button class="botao">Ver Mais</button>
-    </div>
+
 </div>
- 
+        <!-- serapaçao -->
+
+
+
+ <div class="tudo1">
+        <div class="fundo-desc">
+            <div class="container">
+                <div class="img-container">
+                    <img src="./img//imagem (1).png" alt="bbbbbb">
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="descricao">
+                    <div class="pa">
+                        <p>A networking course typically teaches how devices connect and communicate with each other, covering everything from basic concepts to advanced configurations. Here are some typical topics:
+                       
+                            <li> Network Fundamentals: Communication models such as TCP/IP and OSI.</li>
+                            <li> Types of Networks: LAN, WAN, MAN, and wireless networks.</li>
+                            <li> Communication Protocols: HTTP, FTP, DHCP, DNS, and other connectivity essentials.</li>
+                            <li> Equipment Configuration: Routers, switches, and servers.</li>
+                            <li> Network Security: Protection against attacks, firewalls, and encryption.</li>
+                            <li> Cloud Computing and Virtualization: Modern concepts of digital infrastructure.</li>
+                            </p>
+                        
+                    </div>
+
+                </div>
+
+                <div class="botao1">
+                    <button class="botao">Details</button>
+                </div>
+
+            </div>
+
+
+        </div>
+</div>
+        <br>
+
  @include("components.footer")

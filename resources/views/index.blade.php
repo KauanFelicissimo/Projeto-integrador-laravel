@@ -4,6 +4,8 @@
  
 @include("components.header")
 
+<main>
+
 <div class="container-home">
     <div class="fundo-home">
     <h1 class="titulo-home">Study and Learn for Free With Our Courses</h1>
@@ -33,6 +35,8 @@
     </div>
 </div>
 </div>
+
+</main>
 
 
  @include("components.footer")
